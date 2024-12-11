@@ -16,6 +16,12 @@ module.exports = {
         hostname: 'media.dev.to',
         pathname: '**',
       },
+      {
+        protocol: 'https',
+        hostname: 'media2.dev.to',
+        port: '', // Optional, leave empty if not required
+        pathname: '/**', // Matches all paths under the hostname
+      },
     ],
   },
 }

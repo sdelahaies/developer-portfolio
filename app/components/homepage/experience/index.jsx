@@ -30,12 +30,19 @@ function Experience() {
 
       <div className="py-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
-          <div className="flex justify-center items-start">
-            <div className="w-full h-full">
+          <div className="flex justify-center items-center">
+            <div className="relative w-800 h-800 rounded-full overflow-hidden">
+
+              <img
+                src="/gif/test3.gif"
+                alt="Circular GIF"
+                className="w-full h-full object-cover"
+              />
+              {/* <div className="w-full h-full">
               <AnimationLottie animationPath={experience} />
+            </div> */}
             </div>
           </div>
-
           <div>
             <div className="flex flex-col gap-6">
               {
@@ -55,7 +62,7 @@ function Experience() {
                         </p>
                       </div>
                       <div className="flex items-center gap-x-8 px-3 py-5">
-                        <div className="text-violet-500  transition-all duration-300 hover:scale-125">
+                        <div className="text-orange-600  transition-all duration-300 hover:scale-125">
                           <BsPersonWorkspace size={36} />
                         </div>
                         <div>
