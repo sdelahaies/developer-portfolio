@@ -28,7 +28,7 @@ function Education() {
         <div className="flex  items-center">
           <span className="w-24 h-[2px] bg-[#1a1443]"></span>
           <span className="bg-[#1a1443] w-fit text-white p-2 px-5 text-xl rounded-md">
-            Educations
+            Education
           </span>
           <span className="w-24 h-[2px] bg-[#1a1443]"></span>
         </div>
@@ -39,7 +39,8 @@ function Education() {
         <div className="flex justify-center items-start">
         <div className="relative w-800 h-800 rounded-full overflow-hidden">
               <img
-                src="/gif/earth.gif"
+                // src="/gif/earth.gif"
+                src="/gif/earth-4.gif"
                 alt="Experience Animation"
                 className="w-full h-full object-contain"
               />

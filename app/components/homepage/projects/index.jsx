@@ -1,5 +1,14 @@
 import { projectsData } from '@/utils/data/projects-data';
 import ProjectCard from './project-card';
+import SingleProject from './single-project';
+import trip from '/public/image/trip.png';
+
+// const name= "teststs"
+// const description= "3sdfsdfsdfsd"
+// const tags =''
+// const code = ''
+// const demo =''
+// const image = trip
 
 const Projects = () => {
 
@@ -30,6 +39,7 @@ const Projects = () => {
           ))}
         </div>
       </div>
+      {/* <SingleProject name={name} description={description} tags={tags} code={code} demo={demo} image={image}/> */}
     </div>
   );
 };

@@ -1,7 +1,7 @@
-import ayla from '/public/image/ayla.jpg';
-import crefin from '/public/image/crefin.jpg';
-import realEstate from '/public/image/real-estate.jpg';
-import travel from '/public/image/travel.jpg';
+// import ayla from '/public/image/ayla.jpg';
+// import crefin from '/public/image/crefin.jpg';
+// import realEstate from '/public/image/real-estate.jpg';
+// import travel from '/public/image/travel.jpg';
 
 export const projectsData = [
     {
@@ -12,7 +12,7 @@ export const projectsData = [
         role: 'Backend Developer',
         code: '',
         demo: '',
-        image: crefin,
+        image: '',//crefin,
     },
     {
         id: 2,
@@ -22,7 +22,7 @@ export const projectsData = [
         role: 'Full Stack Developer',
         code: '',
         demo: '',
-        image: travel,
+        image: '',//travel,
     },
     {
         id: 3,
@@ -32,17 +32,18 @@ export const projectsData = [
         code: '',
         role: 'Full Stack Developer',
         demo: '',
-        image: realEstate,
+        image: '',//realEstate,
     },
     {
         id: 4,
         name: 'Newsroom Management',
         description: "My team and I developed a newspaper management dashboard application called Newsroom Management. As a front-end developer, I worked on creating the dashboard using NextJS, Material UI, Redux, Calendar, and other necessary npm libraries. We used React Redux to manage the application's state and React-hook-form and Sun Editor to handle forms.",
         tools: ['NextJS', 'Material UI', 'Redux', 'Sun Editor', "Calendar"],
+        role: 'Full tack Developer',
         code: '',
         demo: '',
-        image: ayla,
-        role: 'Full Stack Developer',
+        image: '',//ayla,
+        
     }
 ];
 

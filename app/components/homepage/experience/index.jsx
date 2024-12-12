@@ -33,10 +33,12 @@ function Experience() {
           <div className="flex justify-center items-center">
             <div className="relative w-800 h-800 rounded-full overflow-hidden">
 
-              <img
+              <Image
                 src="/gif/test3.gif"
                 alt="Circular GIF"
-                className="w-full h-full object-cover"
+                width={400}
+                height={400}
+                // className="w-full h-full object-cover"
               />
               {/* <div className="w-full h-full">
               <AnimationLottie animationPath={experience} />

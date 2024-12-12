@@ -10,6 +10,9 @@ import { RiContactsFill } from "react-icons/ri";
 import { SiLeetcode } from "react-icons/si";
 import TypedText from "../../helper/typed-text";
 import PythonCodeRunner from "../../helper/python-code-runner-2";
+import HuggingFace from "@/public/svg/hf-logo(2).svg";
+import ResearchGate from "@/public/svg/researchgate.svg";
+import { CiMail } from "react-icons/ci";
 
 function HeroSection() {
   return (
@@ -44,7 +47,7 @@ function HeroSection() {
               className="rounded-lg transition-all duration-1000 grayscale hover:grayscale-0 hover:scale-110 cursor-pointer"
             />
           </div>
-          
+
           <div>
             <br></br>
             <p className="text-gray-200 text-sm lg:text-lg">
@@ -52,6 +55,13 @@ function HeroSection() {
             </p>
           </div>
           <div className="my-12 flex items-center gap-5">
+            {/* <Link
+              href={personalData.email}
+              target='_blank'
+              className="transition-all text-orange-600 hover:scale-125 duration-300"
+            >
+              <CiMail size={30} />
+            </Link> */}
             <Link
               href={personalData.github}
               target='_blank'
@@ -67,26 +77,30 @@ function HeroSection() {
               <BsLinkedin size={30} />
             </Link>
             <Link
-              href={personalData.facebook}
+              href={personalData.huggingface}
               target='_blank'
               className="transition-all text-orange-600 hover:scale-125 duration-300"
             >
-              <FaFacebook size={30} />
+              <div style={{ borderRadius: '3px', overflow: 'hidden' }}>
+                <Image src={HuggingFace} width="32" height="32" />
+              </div>
             </Link>
             <Link
-              href={personalData.leetcode}
+              href={personalData.researchgate}
               target='_blank'
               className="transition-all text-orange-600 hover:scale-125 duration-300"
             >
-              <SiLeetcode size={30} />
+              <div style={{ borderRadius: '3px', overflow: 'hidden' }}>
+                <Image src={ResearchGate} width="31" height="31" />
+              </div>
             </Link>
-            <Link
+            {/* <Link
               href={personalData.twitter}
               target='_blank'
               className="transition-all text-orange-600 hover:scale-125 duration-300"
             >
               <FaTwitterSquare size={30} />
-            </Link>
+            </Link> */}
           </div>
 
           <div className="flex items-center gap-3">
@@ -118,7 +132,7 @@ function HeroSection() {
             </div>
           </div>
           <div className="overflow-hidden border-t-[2px] border-indigo-900 px-4 lg:px-8 py-4 lg:py-8">
-          <code className="font-mono text-xs md:text-sm lg:text-base">
+            <code className="font-mono text-xs md:text-sm lg:text-base">
               <div className="blink">
                 <span className="mr-2 text-pink-500">class</span>
                 <span className="text-green-400">DataScientist</span>
@@ -142,11 +156,30 @@ function HeroSection() {
                 <span className="ml-8 lg:ml-16 text-cyan-400">self.skills</span>
                 <span className="mr-2 text-pink-500"> =</span>
                 <span className="text-gray-400">[</span>
-                <span className="text-amber-300">&apos;Python&apos;</span>
+                <span className="text-amber-300">"Python"</span>
                 <span className="text-gray-400">, </span>
-                <span className="text-amber-300">&apos;React&apos;</span>
+                <span className="text-amber-300">"Transformers"</span>
                 <span className="text-gray-400">, </span>
-                <span className="text-amber-300">&apos;NextJS&apos;</span>
+                <span className="text-amber-300">"Fastapi"</span>
+                <span className="text-gray-400">, </span>
+              </div>
+              <div>
+                <span className="ml-20 text-amber-300">"Scikit-learn"</span>
+                <span className="text-gray-400">, </span>
+                <span className="text-amber-300">"Docker"</span>
+                <span className="text-gray-400">, </span>
+                <span className="text-amber-300">"Airflow"</span>
+                <span className="text-gray-400">, </span>
+                <span className="text-amber-300">"AWS"</span>
+                <span className="text-gray-400">, </span>
+                <span className="text-amber-300">"Git"</span>
+                <span className="text-gray-400">, </span>
+              </div>
+              <div>
+
+                <span className="ml-20 text-amber-300">"Linux"</span>
+                <span className="text-gray-400">, </span>
+                <span className="text-amber-300">"MySQL"</span>
                 <span className="text-gray-400">, ...]</span>
               </div>
               <div>
@@ -180,62 +213,51 @@ function HeroSection() {
               <div>
                 <span className="ml-16 lg:ml-24 text-cyan-400">len(self.skills)</span>
                 <span className="mr-2 text-amber-300">&gt;=</span>
-                <span className="text-orange-400">5</span>
+                <span className="text-orange-400">7</span>
               </div>
               <br></br>
               <div>
                 <span className="ml-4 lg:ml-8 mr-2 text-orange-400">def</span>
                 <span className="text-white"> proficient_in</span>
-                <span className="text-gray-400">(self, domain):</span>
-              </div>
-              <div>
-                <span className="ml-8 lg:ml-16 text-orange-400">if </span>
-                <span className="text-cyan-400">domain</span>
-                <span className="text-pink-500"> == </span>
-                <span className="text-amber-300">&apos;AI&apos;</span>
-              </div>
-              <div>
-                <span className="ml-16 lg:ml-24 text-cyan-400">len(self.skills)</span>
-                <span className="mr-2 text-amber-300">&gt;=</span>
-                <span className="text-orange-400">5</span>
-              </div>
-              <br></br>
-              <div>
-                <span className="ml-4 lg:ml-8 mr-2 text-orange-400">def</span>
-                <span className="text-white"> hireable</span>
-                <span className="text-gray-400">(self):</span>
+                <span className="text-gray-400">(self, skills):</span>
               </div>
               <div>
                 <span className="ml-8 lg:ml-16 text-orange-400">return</span>
-                <span className="text-cyan-400"> self.hard_worker</span>
-                <span className="text-amber-300"> and</span>
-                <span className="text-cyan-400"> self.problem_solver</span>
-                <span className="text-amber-300"> and</span>
-              </div>
-              <div>
-                <span className="ml-16 lg:ml-24 text-cyan-400">len(self.skills)</span>
-                <span className="mr-2 text-amber-300">&gt;=</span>
-                <span className="text-orange-400">5</span>
+                <span className="text-cyan-400"> skills.issubset(self.skills)</span>
               </div>
               <br></br>
               <div>
                 <span className="ml-4 lg:ml-8 mr-2 text-orange-400">def</span>
-                <span className="text-white"> proficient_in</span>
-                <span className="text-gray-400">(self, domain):</span>
+                <span className="text-white"> summary</span>
+                <span className="text-gray-400">(self,n=5):</span>
               </div>
               <div>
-                <span className="ml-8 lg:ml-16 text-orange-400">if </span>
-                <span className="text-cyan-400">domain</span>
-                <span className="text-pink-500"> == </span>
-                <span className="text-amber-300">&apos;AI&apos;</span>
+                <span className="ml-8 lg:ml-16 text-orange-400">return</span>
+                <span className="text-cyan-400"> f"I m &#123;self.name&#125;," + \</span>
               </div>
               <div>
-                <span className="ml-16 lg:ml-24 text-cyan-400">len(self.skills)</span>
-                <span className="mr-2 text-amber-300">&gt;=</span>
-                <span className="text-orange-400">5</span>
+                <span className="ml-20 text-cyan-400"> f"proficient in &#123;self.skills[:n]&#125; and more" + \ </span>
+              </div>
+              <div>
+                <span className="ml-20 text-cyan-400"> "and looking for opportunities!" </span>
+              </div>
+              <br></br>   
+              <div>
+                <span className="text-cyan-400">sylvain</span>
+                <span className="mr-2 text-pink-500"> =</span>
+                <span className="text-cyan-400">DataScientist</span>
+                <span className="text-gray-400">()</span>
+              </div>
+              <div>
+                <span className="text-orange-400">print</span>
+                <span className="text-gray-400">(</span>
+                <span className="text-amber-300">"summary:"</span>
+                <span className="text-gray-400">,</span>
+                <span className="text-cyan-400">sylvain.summary</span>
+                <span className="text-gray-400">())</span>
               </div>
             </code>
-            <PythonCodeRunner/>
+            <PythonCodeRunner />
             {/* <code className="font-mono text-xs md:text-sm lg:text-base">
               <div className="blink">
                 <span className="mr-2 text-orange-600">const</span>

@@ -30,12 +30,10 @@ const PythonCodeRunner = () => {
           <div className="bg-black p-6 rounded-lg shadow-lg max-w-md w-full">
             <h2 className="text-lg font-bold mb-2">Output:</h2>
             <pre className="bg-gray-100 p-4 rounded-lg text-sm text-gray-800">
-              {`I'm Sylvain Delahaies, a wizard of Python, 
-React, NextJS, Redux, Express, 
-and yes, hire me!
-
-Proficient in AI? True
-Proficient in DevOps? True`}
+              {`I'm Sylvain Delahaies, 
+proficient in python, transformers, fastapi,
+docker, AWS, SQL, and more,
+and looking for opportunities!`}
             </pre>
             <button
               onClick={handleClose}

@@ -8,14 +8,15 @@ export const personalData = {
   address: 'Condat-sur-Vézère, Dordogne, France',
   github: 'https://github.com/sdelahaies',
   facebook: '',
-  linkedIn: 'https://www.linkedin.com/in/in/sylvaindelahaies/',
+  linkedIn: 'https://www.linkedin.com/in/sylvaindelahaies/',
+  huggingface: 'https://huggingface.co/sdelahaies',
+  researchgate: 'https://www.researchgate.net/profile/Sylvain-Delahaies-2',
   twitter: 'https://twitter.com/said7388',
   stackOverflow: 'https://stackoverflow.com/users/16840768/abu-said',
   leetcode: "https://leetcode.com/said3812/",
   devUsername: "said7388",
-  resume: "https://drive.google.com/file/d/1eyutpKFFhJ9X-qpQGKhUNnVRkB5Wer00/view?usp=sharing"
+  resume: "https://drive.google.com/file/d/1BUIBuoA99K67Msq3bwpuNONgSmvsjV34/view?usp=sharing"
 }
-
 
 // export const personalData = {
 //   name: "ABU SAID",
